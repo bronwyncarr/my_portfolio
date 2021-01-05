@@ -1,15 +1,18 @@
 .projects {
-  background-color: steelblue;
+  background-color: rgb(255, 248, 255);
+  /* background-color: #906d9b; */
+  /* background-color: #ff9479 orange */
   margin: 0;
 }
 
 .project-container {
   display: flex;
-  margin: 0 auto;
+  margin: 30px auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 1500px;
+  padding-bottom: 50px;
 }
 
 
