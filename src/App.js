@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <Nav />
       <Banner />
+      <div style={{height: "800px", backgroundColor: "whitesmoke"}}>
+        <h1>STACK GOES HERE</h1>
+      </div>
       <Projects />
       <Contact />
     </div>
