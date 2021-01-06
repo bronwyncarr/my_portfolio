@@ -31,13 +31,13 @@ function Contact() {
       </form>
       <div className="icons">
         <a href="https://github.com/bronwyncarr">
-          <i className="fab fa-github fa-3x m-2 text-dark"></i>
+          <i className="fab fa-github"></i>
         </a>
         <a href="www.linkedin.com/in/bronwyncarr">
-          <i className="fab fa-linkedin fa-3x m-2 text-dark"></i>
+          <i className="fab fa-linkedin"></i>
         </a>
         <a href="https://twitter.com/home">
-          <i className="fab fa-twitter fa-3x m-2 text-dark"></i>
+          <i className="fab fa-twitter"></i>
         </a>
       </div>
     </div>
