@@ -1,6 +1,7 @@
 import "./Project.css";
 
 function Project({ name, details, pic, stack, link}) {
+
   return (
     <div className="flip-card">
       <div class="flip-card-inner">

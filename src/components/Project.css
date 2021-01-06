@@ -7,7 +7,7 @@
 }
 
 .flip-card img {
-  height: 250px;
+  height: 220px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
@@ -16,7 +16,6 @@
 .flip-card h4 {
   text-align: center;
   font-size: 2rem;
-  padding-bottom: 10px;
 }
 
 .flip-card p {
@@ -56,7 +55,7 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: rgb(235, 235, 235);
   color: black;
   border-radius: 20px;
 }
