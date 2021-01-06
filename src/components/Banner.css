@@ -13,7 +13,6 @@
   background-image: url('../cloud\ pic.jpg');
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  opacity: 0.8;
   padding-top: 20px;
   font-size: 9rem;
   animation: filling 20s ease-out forwards;
@@ -21,7 +20,6 @@
   color: transparent;
   -webkit-background-clip: text;
   letter-spacing: -8px;
-  /* background-position: 50% 50%; */
 }
 
 .banner h2 {

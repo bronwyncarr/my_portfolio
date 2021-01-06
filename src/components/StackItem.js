@@ -1,13 +1,14 @@
-import { render } from "@testing-library/react"
+import "./StackItem.css";
 
-function StackItem({name, icon}) {
+function StackItem({ name, idx }) {
+  // 
   return (
-    <div>
-      <p>{name}
-        <i className={icon}></i>
-      </p>
+    <div className="inner-container" >
+      <span className={idx}>
+        <i className={name}></i>E
+      </span>
     </div>
-  )
+  );
 }
 
-export default StackItem
+export default StackItem;

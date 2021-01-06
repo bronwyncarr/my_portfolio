@@ -1,0 +1,40 @@
+.inner-container {
+  display: inline;
+  font: 26px Monaco, MonoSpace;
+  height: 300px;
+  position: absolute;
+  width: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: bottom center;
+}
+
+span {
+  display: block;
+}
+
+i {
+  font-size: 3rem;
+}
+
+.two {
+  transform: rotate(20deg);
+}
+
+.three {
+  transform: rotate(40deg);
+}
+
+.four {
+  transform: rotate(60deg);
+}
+
+.five {
+  transform: rotate(180deg);
+}
+
+
+.char2 { transform: rotate(-20deg);  transform-origin: center}
+.char3 { transform: rotate(-40deg);  transform-origin: center}
+.char4 { transform: rotate(-60deg); transform-origin: center }
+.char5 { transform: rotate(-180deg); transform-origin: center }
