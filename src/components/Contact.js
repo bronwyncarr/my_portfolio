@@ -2,11 +2,11 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <div className="contact">
+    <section className="contact">
       <h1>Contact</h1>
       <form action="https://formspree.io/f/xnqobwpy" method="POST">
         <div className="form-group">
-          <label for="email">Email address</label>
+          <label for="email">Email address:</label>
           <input
             type="email"
             className="form-control"
@@ -22,10 +22,10 @@ function Contact() {
             type="password"
             className="form-control"
             id="message"
-            rows="5"
+            rows="7"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-secondary btn-dark">
+        <button type="submit" className="btn">
           Submit
         </button>
       </form>
@@ -40,7 +40,7 @@ function Contact() {
           <i className="fab fa-twitter"></i>
         </a>
       </div>
-    </div>
+    </section>
   );
 }
 
