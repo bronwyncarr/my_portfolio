@@ -28,7 +28,7 @@
 }
 
 .text p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Titillium Web", "Raleway", sans-serif;
   height: 100%;
   font-size: 1.4rem;
   line-height: 1.25;
@@ -42,6 +42,8 @@
 .text strong {
   font-size: 3rem;
   font-style: normal;
+  font-weight: lighter;
+  line-height: 1.5;
 }
 
 .text::before {
