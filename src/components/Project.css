@@ -1,3 +1,5 @@
+/* Sets card size */
+/* Perspective reduces 3D effect for a cleaner flip rather than a "thick" 3d appearance*/
 .flip-card {
   background-color: transparent;
   width: 350px;
@@ -7,6 +9,8 @@
   cursor: pointer;
 }
 
+/* Front Image of project */
+/* border raduis to match card border radius at top only */
 .flip-card img {
   height: 220px;
   width: 100%;
@@ -30,6 +34,9 @@
   color: white;
 }
 
+/* Each project card */
+/* Transformation is 180 flip on Y axis */
+/* transform-style preserves child elements 3D position */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -45,6 +52,8 @@
   transform: rotateY(180deg);
 }
 
+/* Front and Back cards */
+/* Backface defines whether the back face is hidden or visible  */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
@@ -66,9 +75,12 @@
   padding-top: 20px;
 }
 
+/* Small screens */
+/* Each card is a bit smaller to fit one card comfortably across */
+/* Text size is reduced */
 @media only screen and (max-width: 680px) {
   .flip-card {
-    width: 350px;
+    width: 280px;
     height: 320px;
     margin: 20px;
   }
@@ -78,6 +90,6 @@
   }
 
   .flip-card p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }

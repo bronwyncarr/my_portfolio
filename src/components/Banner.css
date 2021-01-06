@@ -9,19 +9,20 @@
   z-index: -2;
 }
 
+/* Transparent text with background image of clouds that move */
 .banner h1 {
   background-image: url('../cloud\ pic.jpg');
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  background-clip: text; /*oOw far background should extend within element */
   font-size: 9rem;
-  animation: filling 20s ease-out forwards;
-  /* margin: 20px 0;  */
+  animation: clouds 20s ease-out forwards;
   padding: 20px 10px;
   color: transparent;
   -webkit-background-clip: text;
   letter-spacing: -8px;
 }
 
+/* White descriptive text */
 .banner h2 {
   font-weight: normal;
   text-transform: uppercase;
@@ -30,23 +31,31 @@
   font-size: 1.5rem;
 }
 
-@keyframes filling {
+/* Amination of clouds moving behind text */
+@keyframes clouds {
   from{
-    background-position: center -150%;
+    background-position: center -10%;
   }
   to {
-    background-position: center 0%;
+    background-position: center 120%;
   }
 }
 
+/* Mid screens eg iPad */
 @media only screen and (max-width: 1200px) {
   .banner h1 {
     font-size: 5rem;
   }
 }
 
+/* Small screens eg mobile */
 @media only screen and (max-width: 680px) {
+  .banner h1 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    text-align: center;
+  }
   .banner h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
