@@ -27,9 +27,8 @@ function Stack() {
             <strong>Stack</strong>
             <br />
             <br />
-            Technologies tailored to the task. I use a variety of front end and
-            back end technologies including CSS, React, Rails, PostgreSQL and
-            MongoDB.
+            Technologies tailored to the task. I use a variety of front-end &
+            back-end technologies including CSS, React, MERN, Rails, PostgreSQL, and more...
           </p>
         </div>
       </div>

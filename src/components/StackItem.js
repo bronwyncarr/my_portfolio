@@ -11,11 +11,11 @@ function StackItem({ name, idx, angle }) {
     >
       <span
         style={{
-          transform: `rotate(${-angle}deg)`,
+          transform: `rotate(${-angle}deg)`
         }}
         className={idx}
       >
-        <i className={name}></i>E
+        <i className={name}></i>
       </span>
     </div>
   );
