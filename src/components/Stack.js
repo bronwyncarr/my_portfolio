@@ -1,7 +1,8 @@
 import "./Stack.css";
 import StackItem from "./StackItem";
 
-function Stack() {
+function Stack({id}) {
+  // array of devicons
   const techs = [
     "devicon-css3-plain-wordmark colored",
     "devicon-javascript-plain colored",
@@ -20,24 +21,35 @@ function Stack() {
   ];
 
   return (
-    <div class="stack-container">
-      <div class="quote-wrapper">
-        <div class="text">
+    <section className="stack-container"  id={id}>
+      {/* to Be displayed in circle shape */}
+      <div className="info-wrapper">
+        <div className="text">
           <p>
             <strong>Stack</strong>
             <br />
             Technologies tailored to the task. I use a variety of front-end &
-            back-end technologies including CSS, React, Rails, MongoDB, PostgreSQL, and more...
+            back-end technologies including CSS, React, Rails, MongoDB,
+            PostgreSQL, and more...
           </p>
         </div>
       </div>
-      <div class="icons-container">
+      {/* Displayed on larger screens - need to adjust the css so not rendering twice */}
+      <div className="icons-container-circle">
+        {/* length * 360 gives angle each item will be seperated by.*/}
+        {/* Multiplied by index gives position around a circle like bike spokes */}
         {techs.map((tech, idx, array) => {
           const angle = (idx / array.length) * 360;
           return <StackItem angle={angle} key={idx} name={tech} idx={idx} />;
         })}
       </div>
-    </div>
+      {/* displayed on smaller screens */}
+      <div className="icons-container-square">
+        {techs.map((tech, idx) => {
+          return <StackItem key={idx} name={tech} idx={idx} />;
+        })}
+      </div>
+    </section>
   );
 }
 

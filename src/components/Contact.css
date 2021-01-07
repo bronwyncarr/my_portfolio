@@ -1,15 +1,8 @@
 .contact {
-  background-color: rgb(46, 46, 46);
-  margin: 0;
-  color: whitesmoke;
-}
-
-.contact h1 {
-    text-align: center;
-    font-size: 4rem;
-    padding-top: 50px;
-    
-    font-weight: lighter;
+  background-color:  rgb(59, 59, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
@@ -17,44 +10,60 @@ form {
   flex-direction: column;
   width: 500px;
   justify-content: center;
-  margin: 50px auto;
+  align-items: center;
+  margin: 0;
 }
 
-form label {
+form label, form input, form textarea {
   border-radius: 10px;
 }
 
 form input {
-  height: 30px
-}
-
-form textarea {
-  border-radius: 10px;
+  height: 40px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-}
-label {
-  margin: 10px 0;
+  padding: 15px;
+  min-width: 100%;
 }
 
-button {
+label {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.btn {
   margin: 20px 0;
+  padding: 10px;
+  width: 30%;
+  min-width: 100px;
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
 
 .icons {
-  width: 500px;
-  margin: 0 auto;
+  width: 400px;
   padding-bottom: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 
 }
 
 .contact i {
-  margin: 20px;
+  margin: 20px 0;
   font-size: 4rem;
   color: whitesmoke;
+}
+
+@media only screen and (max-width: 680px) {
+  form {
+    width: 100%;
+  }
+  
+  .icons {
+    width: 100%;
+  }
 }

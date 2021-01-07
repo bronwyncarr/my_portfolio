@@ -1,26 +1,16 @@
 .projects {
-  background-color: rgb(255, 248, 255);
+  /* background-color: rgb(255, 248, 255); */
   /* background-color: #906d9b; */
   /* background-color: #ff9479 orange */
-  margin: 0;
+  background-color:  rgba(144,109,155, 1);
 }
 
 .project-container {
   display: flex;
   margin: 0 auto;
-  padding: 50px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 1500px;
-}
-
-
-.projects h1 {
-  text-align: center;
-  font-size: 4rem;
-  font-style: normal;
-  font-weight: lighter;
-  padding-top: 50px;
 }
 

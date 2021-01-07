@@ -1,11 +1,16 @@
+/* Sets card size */
+/* Perspective reduces 3D effect for a cleaner flip rather than a "thick" 3d appearance*/
 .flip-card {
   background-color: transparent;
   width: 350px;
   height: 350px;
   perspective: 1000px;
   margin: 20px;
+  cursor: pointer;
 }
 
+/* Front Image of project */
+/* border raduis to match card border radius at top only */
 .flip-card img {
   height: 220px;
   width: 100%;
@@ -26,10 +31,11 @@
 .flip-card i {
   font-size: 3rem;
   margin: 10px;
-  color: white;
 }
 
-
+/* Each project card */
+/* Transformation is 180 flip on Y axis */
+/* transform-style preserves child elements 3D position */
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -39,30 +45,49 @@
   transform-style: preserve-3d;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-
 }
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
+/* Front and Back cards */
+/* Backface defines whether the back face is hidden or visible  */
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
 }
 
 .flip-card-front {
-  background-color: rgb(250, 250, 250);
-  color: black;
+  background-color: rgb(255, 248, 255);
   border-radius: 20px;
 }
 
 .flip-card-back {
-  background-color:#906d9b;
-  color: white;
+  background-color:rgb(255, 248, 255);
   transform: rotateY(180deg);
   border-radius: 20px;
+  padding-top: 20px;
+}
+
+/* Small screens */
+/* Each card is a bit smaller to fit one card comfortably across */
+/* Text size is reduced */
+@media only screen and (max-width: 680px) {
+  .flip-card {
+    width: 280px;
+    height: 320px;
+    margin: 20px;
+  }
+
+  .flip-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .flip-card p {
+    font-size: 1.2rem;
+  }
 }

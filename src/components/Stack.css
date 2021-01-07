@@ -4,7 +4,8 @@
   background-color: rgb(250, 250, 250);
 }
 
-.quote-wrapper {
+/* Centered circle */
+.info-wrapper {
   width: 360px;
   height: 360px;
   position: absolute;
@@ -13,14 +14,15 @@
   transform: translate(-50%, -50%);
 }
 
+/* Background color and color of text in circle */
 .text {
   width: 100%;
   height: 100%;
   background: radial-gradient(
     ellipse at center,
-    rgb(144,109,155, 1) 0%,
-    rgb(144,109,155, 1) 70%,
-    rgb(144,109,155, 0) 70.3%
+    rgba(144,109,155, 1) 0%,
+    rgba(144,109,155, 1) 70%,
+    rgba(144,109,155, 0) 70.3%
   );
   position: relative;
   margin: 0;
@@ -32,13 +34,12 @@
   height: 100%;
   font-size: 1.4rem;
   line-height: 1.25;
-  padding: 0;
   text-align: center;
   font-style: italic;
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
-  margin: 0;
 }
 
+/* Heading */
 .text strong {
   font-size: 3rem;
   font-style: normal;
@@ -46,6 +47,7 @@
   line-height: 1.5;
 }
 
+/* polygon shape*/
 .text::before {
   content: "";
   width: 50%;
@@ -67,6 +69,7 @@
   shape-margin: 7%;
 }
 
+/* polygon shape */
 .text p::before {
   content: "";
   width: 50%;
@@ -88,11 +91,7 @@
   shape-margin: 7%;
 }
 
-@media (min-width: 680px) {
- 
-}
-
-.icons-container {
+.icons-container-circle {
   position: absolute;
   width: 600px;
   height: 600px;
@@ -100,3 +99,48 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.icons-container-square {
+  display: none;
+}
+
+/* Small screens */
+/* Info is in a centered circle and text icons appear below */
+@media only screen and (max-width: 680px) {
+  .stack-container {
+    position: static;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    padding-top: 50px;
+  }
+
+  /* Position circle centered with margin full screen*/
+.info-wrapper {
+  width: 360px;
+  height: 360px;
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+  margin: 0 auto;
+  width: 280px;
+  height: 280px;
+}
+
+.icons-container-circle {
+  display: none;
+}
+
+.icons-container-square {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text p {
+  font-size: 1rem;
+}
+}
+

@@ -1,7 +1,10 @@
 import "./StackItem.css";
 
-function StackItem({ name, idx, angle }) {
-  //
+// default prop if angle not required for small screens
+function StackItem({ name, idx, angle = 0 }) {
+  // Each item has a different, evenly spaced angle around the circle.
+  // The outer represents bike spokes
+  // The inner span is just the icon rotated opposite to the spoke angle so the icon is upright.
   return (
     <div
       style={{
@@ -11,7 +14,7 @@ function StackItem({ name, idx, angle }) {
     >
       <span
         style={{
-          transform: `rotate(${-angle}deg)`
+          transform: `rotate(${-angle}deg)`,
         }}
         className={idx}
       >
