@@ -2,6 +2,7 @@ import "./Stack.css";
 import StackItem from "./StackItem";
 
 function Stack() {
+  // array of devicons
   const techs = [
     "devicon-css3-plain-wordmark colored",
     "devicon-javascript-plain colored",
@@ -20,8 +21,9 @@ function Stack() {
   ];
 
   return (
-    <div class="stack-container">
-      <div class="quote-wrapper">
+    <section class="stack-container">
+      {/* to Be displayed in circle shape */}
+      <div class="info-wrapper">
         <div class="text">
           <p>
             <strong>Stack</strong>
@@ -31,13 +33,22 @@ function Stack() {
           </p>
         </div>
       </div>
-      <div class="icons-container">
+      {/* Displayed on larger screens - need to adjust the css so not rendering twice */}
+      <div class="icons-container-circle">
+        {/* length * 360 gives angle each item will be seperated by.*/}
+        {/* Multiplied by index gives position around a circle like bike spokes */}
         {techs.map((tech, idx, array) => {
           const angle = (idx / array.length) * 360;
           return <StackItem angle={angle} key={idx} name={tech} idx={idx} />;
         })}
       </div>
-    </div>
+      {/* displayed on smaller screens */}
+      <div class="icons-container-square">
+        {techs.map((tech, idx) => {
+          return <StackItem key={idx} name={tech} idx={idx} />;
+        })}
+      </div>
+    </section>
   );
 }
 

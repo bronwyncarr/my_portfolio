@@ -1,6 +1,5 @@
 .inner-container {
   display: inline;
-  font: 26px Monaco, MonoSpace;
   height: 300px;
   position: absolute;
   width: 0px;
@@ -18,4 +17,19 @@ span {
 
 .stack-container i {
   font-size: 5rem;
+}
+
+@media only screen and (max-width: 680px) {
+  .inner-container {
+    position: static;
+    left: auto;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+
+  span {
+    top: 0;
+    left: 0;
+  }
 }
