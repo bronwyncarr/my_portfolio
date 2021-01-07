@@ -20,9 +20,9 @@
   height: 100%;
   background: radial-gradient(
     ellipse at center,
-    rgb(144,109,155, 1) 0%,
-    rgb(144,109,155, 1) 70%,
-    rgb(144,109,155, 0) 70.3%
+    rgba(144,109,155, 1) 0%,
+    rgba(144,109,155, 1) 70%,
+    rgba(144,109,155, 0) 70.3%
   );
   position: relative;
   margin: 0;

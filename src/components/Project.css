@@ -31,7 +31,6 @@
 .flip-card i {
   font-size: 3rem;
   margin: 10px;
-  color: white;
 }
 
 /* Each project card */
@@ -63,13 +62,12 @@
 }
 
 .flip-card-front {
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(255, 248, 255);
   border-radius: 20px;
 }
 
 .flip-card-back {
-  background-color:#906d9b;
-  color: white;
+  background-color:rgb(255, 248, 255);
   transform: rotateY(180deg);
   border-radius: 20px;
   padding-top: 20px;

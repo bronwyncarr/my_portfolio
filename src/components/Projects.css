@@ -1,7 +1,8 @@
 .projects {
-  background-color: rgb(255, 248, 255);
+  /* background-color: rgb(255, 248, 255); */
   /* background-color: #906d9b; */
   /* background-color: #ff9479 orange */
+  background-color:  rgba(144,109,155, 1);
 }
 
 .project-container {

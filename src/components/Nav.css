@@ -11,7 +11,7 @@
 /* transition for .active class that changes padding/height. */
 .nav .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 20px 0;
   transition: all 0.3s ease-in-out;
@@ -27,7 +27,7 @@
 
 /* Same transition */
 .nav a, nav h1 {
-  color: #fff;
+  color: whitesmoke;
   text-decoration: none;
   padding: 7px 15px;
   transition: all 0.3s ease-in-out;
@@ -36,8 +36,8 @@
 /* Current page in contrast color and when hover over link */
 /* .nav a.current, */
 .nav a:hover, li .active a {
-  color: #906d9b;
-  font-weight: bold;
+  color: rgba(144,109,155, 1);
+  cursor: pointer;
 }
 
 nav .icon-links {
