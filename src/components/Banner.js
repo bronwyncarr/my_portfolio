@@ -1,5 +1,6 @@
 import "./Banner.css";
 
+//Text centered in the banner with moving clouds in the background.
 function Banner() {
   return (
     <div className="banner">
