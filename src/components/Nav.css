@@ -13,7 +13,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 20px 0;
   transition: all 0.3s ease-in-out;
 }
 
@@ -26,10 +25,10 @@
 }
 
 /* Same transition */
-.nav li, nav h1 {
+.nav li {
   color: whitesmoke;
   text-decoration: none;
-  padding: 7px 15px;
+  padding: 27px 15px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -45,11 +44,21 @@ nav .icon-links {
 }
 
 @media only screen and (max-width: 680px) {
+  .nav .nav-container {
+    padding: 20px 0;
+  }
+
+  .nav li {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0 15px;
+  }
+
   nav .icon-links {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .logo {
