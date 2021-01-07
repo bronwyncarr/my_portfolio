@@ -26,7 +26,7 @@
 }
 
 /* Same transition */
-.nav a, nav h1 {
+.nav li, nav h1 {
   color: whitesmoke;
   text-decoration: none;
   padding: 7px 15px;
@@ -35,7 +35,7 @@
 
 /* Current page in contrast color and when hover over link */
 /* .nav a.current, */
-.nav a:hover, li .active a {
+.nav li:hover, li .active a {
   color: rgba(144,109,155, 1);
   cursor: pointer;
 }
