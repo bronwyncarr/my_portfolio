@@ -34,7 +34,7 @@ function Contact({id}) {
         <a href="https://github.com/bronwyncarr">
           <i className="fab fa-github"></i>
         </a>
-        <a href="www.linkedin.com/in/bronwyncarr">
+        <a href="https://linkedin.com/in/bronwyncarr">
           <i className="fab fa-linkedin"></i>
         </a>
         <a href="https://twitter.com/home">
