@@ -13,15 +13,18 @@ This application was developed using React and CSS.
 
 This application is designed to be responsive to multiple screen sizes.
 
+Desktop:
+
+![Portfolio](./docs/desktop.gif)
+
+Mobile:
+
+![Portfolio](./docs/mobile.gif)
+
 ## 🚧 Continual Development
 
 This app will be updated as I design and devlope more projects to showcase.
 
-Desktop:
-![Portfolio](./docs/desktop.gif)
-
-Mobile:
-![Portfolio](./docs/mobile.gif)
 
 ## ✋ Contributions
 
