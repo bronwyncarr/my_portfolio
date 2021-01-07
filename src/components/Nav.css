@@ -27,7 +27,7 @@
 }
 
 /* Same transition */
-.nav a {
+.nav a, nav h1 {
   color: #fff;
   text-decoration: none;
   padding: 7px 15px;
@@ -50,8 +50,29 @@
 }
 
 /* Current page in contrast color and when hover over link */
-.nav a.current,
+/* .nav a.current, */
 .nav a:hover {
   color: #906d9b;
   font-weight: bold;
+}
+
+nav .icon-links {
+  display: none;
+}
+
+@media only screen and (max-width: 680px) {
+  nav .icon-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav .word-links {
+    display: none;
+  }
 }
