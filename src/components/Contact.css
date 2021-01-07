@@ -49,13 +49,17 @@ label {
   padding-bottom: 50px;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .contact i {
   margin: 20px 0;
   font-size: 4rem;
   color: whitesmoke;
+}
+
+.contact i:hover {
+  color: rgba(144,109,155, 1);
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 680px) {
