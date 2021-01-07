@@ -21,7 +21,7 @@ const ProjectData = [
     pic:
     "../../img/movie.png",
     details:
-      "Mini projects to demostrate specific CSS and JavaScript skills. Based on the '50 Projects in 50 Days' course each projet has been altered or extended to demonstrate technique.",
+      "Mini projects to demostrate specific CSS and JavaScript skills. Based on the '50 Projects in 50 Days' course each project has been altered or extended to demonstrate technique.",
     stack: "CSS, JavaScript",
     link: "https://github.com/bronwyncarr/50_projects_50_days",
   },
@@ -37,20 +37,20 @@ const ProjectData = [
   {
     name: "Tic Tac Toe",
     pic:
-    "../../img/marketplace.png",
+    "../../img/tictactoe.png",
     details:
       "Simple take on the classic game to demonstrate React functionailty.",
     stack: "React, CSS",
-    link: "https://github.com/bronwyncarr/waste_me_not",
+    link: "https://github.com/bronwyncarr/tictactoe",
   },
   {
     name: "Tax Tidy",
     pic:
-    "../../img/tictactoe.png",
+    "../../img/tax.png",
     details:
       "Inspired by being an ATO Tax help volunteer, this app is designed to help simplify parts of tax for those that find it overwhelming. Keep track of your deductions in one place.",
     stack: "Ruby on Rails, Bootstrap, PostgreSQL, AWS",
-    link: "https://github.com/bronwyncarr/react_movie_search",
+    link: "https://github.com/bronwyncarr/tax_tidy",
   },
 ];
 
