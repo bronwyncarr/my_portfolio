@@ -9,7 +9,7 @@ It is deployed at [bronwyn-carr.netlify.app/](https://bronwyn-carr.netlify.app/)
 
 This application was developed using React and CSS.
 
-## Design
+## ✍ Design
 
 This application is designed to be responsive to multiple screen sizes.
 
@@ -23,8 +23,7 @@ Mobile:
 
 ## 🚧 Continual Development
 
-This app will be updated as I design and devlope more projects to showcase.
-
+This app will be updated as I design and devlop more projects to showcase.
 
 ## ✋ Contributions
 
