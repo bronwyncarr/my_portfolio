@@ -2,20 +2,46 @@ import "./Nav.css";
 
 function Nav() {
   return (
-    <nav class="nav">
-      <div class="nav-container">
-        <h1 class="logo">Name</h1>
-        <ul class="word-links">
-          <li><a href="#" class="current">Home</a></li>
-          <li><a href="#">Stack</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+    <nav className="nav">
+      <div className="nav-container">
+        <h1 className="logo">Name</h1>
+        <ul className="word-links">
+          <li>
+            <a href="#" className="current">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#">Stack</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
-        <ul class="icon-links">
-          <li><a href="#" class="current"><i class="fas fa-home"></i></a></li>
-          <li><a href="#"><i class="fas fa-tools"></i></a></li>
-          <li><a href="#"><i class="fas fa-clipboard-list"></i></a></li>
-          <li><a href="#"><i class="fas fa-phone"></i></a></li>
+        <ul className="icon-links">
+          <li>
+            <a href="#" className="current">
+              <i className="fas fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fas fa-tools"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fas fa-clipboard-list"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i className="fas fa-phone"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

@@ -21,20 +21,21 @@ function Stack() {
   ];
 
   return (
-    <section class="stack-container">
+    <section className="stack-container">
       {/* to Be displayed in circle shape */}
-      <div class="info-wrapper">
-        <div class="text">
+      <div className="info-wrapper">
+        <div className="text">
           <p>
             <strong>Stack</strong>
             <br />
             Technologies tailored to the task. I use a variety of front-end &
-            back-end technologies including CSS, React, Rails, MongoDB, PostgreSQL, and more...
+            back-end technologies including CSS, React, Rails, MongoDB,
+            PostgreSQL, and more...
           </p>
         </div>
       </div>
       {/* Displayed on larger screens - need to adjust the css so not rendering twice */}
-      <div class="icons-container-circle">
+      <div className="icons-container-circle">
         {/* length * 360 gives angle each item will be seperated by.*/}
         {/* Multiplied by index gives position around a circle like bike spokes */}
         {techs.map((tech, idx, array) => {
@@ -43,7 +44,7 @@ function Stack() {
         })}
       </div>
       {/* displayed on smaller screens */}
-      <div class="icons-container-square">
+      <div className="icons-container-square">
         {techs.map((tech, idx) => {
           return <StackItem key={idx} name={tech} idx={idx} />;
         })}

@@ -7,7 +7,14 @@ import Stack from "./components/Stack";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      style={{
+        height: "100vh",
+        overflow: "auto",
+      }}
+      onScroll={() => console.log("Scroll")}
+      className="App"
+    >
       <Nav />
       <Banner />
       <Stack />
