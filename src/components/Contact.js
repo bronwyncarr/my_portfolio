@@ -1,12 +1,12 @@
 import "./Contact.css";
 
-function Contact() {
+function Contact({id}) {
   return (
-    <section className="contact">
+    <section className="contact"  id={id}>
       <h1>Contact</h1>
       <form action="https://formspree.io/f/xnqobwpy" method="POST">
         <div className="form-group">
-          <label for="email">Email address:</label>
+          <label htmlFor="email">Email address:</label>
           <input
             type="email"
             className="form-control"
@@ -17,7 +17,7 @@ function Contact() {
           ></input>
         </div>
         <div className="form-group">
-          <label for="message">Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             type="password"
             className="form-control"

@@ -1,7 +1,7 @@
 import "./Stack.css";
 import StackItem from "./StackItem";
 
-function Stack() {
+function Stack({id}) {
   // array of devicons
   const techs = [
     "devicon-css3-plain-wordmark colored",
@@ -21,7 +21,7 @@ function Stack() {
   ];
 
   return (
-    <section className="stack-container">
+    <section className="stack-container"  id={id}>
       {/* to Be displayed in circle shape */}
       <div className="info-wrapper">
         <div className="text">

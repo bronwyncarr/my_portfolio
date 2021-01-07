@@ -1,9 +1,8 @@
 .nav {
-  position: fixed;
+  position: sticky;
   background-color: #222;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   transition: all 0.3s ease-in-out;
   z-index: 10;
 }
@@ -34,24 +33,9 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* When scroll down past trigger point becomes active */
-/* changes color and height/padding */
-.nav.active {
-  background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.nav.active a {
-  color: #000;
-}
-
-.nav.active .container {
-  padding: 5px 0;
-}
-
 /* Current page in contrast color and when hover over link */
 /* .nav a.current, */
-.nav a:hover {
+.nav a:hover, li .active a {
   color: #906d9b;
   font-weight: bold;
 }

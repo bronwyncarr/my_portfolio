@@ -1,46 +1,97 @@
 import "./Nav.css";
+import { Link, animateScroll as scroll } from "react-scroll";
 
-function Nav() {
+function Nav({id}) {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
-    <nav className="nav">
+    <nav className="nav" id={id}>
       <div className="nav-container">
         <h1 className="logo">Name</h1>
         <ul className="word-links">
           <li>
-            <a href="#" className="current">
-              Home
-            </a>
+            <a href="#" onClick={scrollToTop}>Home</a>
           </li>
           <li>
-            <a href="#">Stack</a>
+          <Link
+                activeClass="active"
+                to="stack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+            Stack
+            </Link>
+          </li>
+          <li> 
+             <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+            Projects
+            </Link>
           </li>
           <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+          <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+         Contact
+         </Link>
           </li>
         </ul>
         <ul className="icon-links">
           <li>
-            <a href="#" className="current">
-              <i className="fas fa-home"></i>
-            </a>
+          <a href="#" onClick={scrollToTop}><i className="fas fa-home"></i></a>
+              
+            
           </li>
           <li>
-            <a href="#">
+          <Link
+                activeClass="active"
+                to="stack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
               <i className="fas fa-tools"></i>
-            </a>
+              </Link>
           </li>
           <li>
-            <a href="#">
+          <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
               <i className="fas fa-clipboard-list"></i>
-            </a>
+              </Link>
           </li>
           <li>
-            <a href="#">
+          <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
               <i className="fas fa-phone"></i>
-            </a>
+              </Link>
           </li>
         </ul>
       </div>

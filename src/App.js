@@ -4,22 +4,16 @@ import Nav from "./components/Nav";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Stack from "./components/Stack";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function App() {
   return (
-    <div
-      style={{
-        height: "100vh",
-        overflow: "auto",
-      }}
-      onScroll={() => console.log("Scroll")}
-      className="App"
-    >
-      <Nav />
+    <div className="App" >
+      <Nav id="top"/>
       <Banner />
-      <Stack />
-      <Projects />
-      <Contact />
+      <Stack id="stack"/>
+      <Projects id="projects" />
+      <Contact id="contact" />
     </div>
   );
 }
