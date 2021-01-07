@@ -11,9 +11,9 @@ function Nav({ id }) {
       <div className="nav-container">
         <ul className="word-links">
           <li>
-            <a href="#" onClick={scrollToTop}>
+            <div href="#" onClick={scrollToTop}>
               Home
-            </a>
+            </div>
           </li>
           <li>
             <Link
@@ -54,9 +54,9 @@ function Nav({ id }) {
         </ul>
         <ul className="icon-links">
           <li>
-            <a href="#" onClick={scrollToTop}>
+            <div href="#" onClick={scrollToTop}>
               <i className="fas fa-home"></i>
-            </a>
+            </div>
           </li>
           <li>
             <Link
