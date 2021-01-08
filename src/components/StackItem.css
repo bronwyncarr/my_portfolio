@@ -1,3 +1,5 @@
+/* Spoke of the bike wheel */
+/* JS generated angle */
 .inner-container {
   display: inline;
   height: 300px;
@@ -8,17 +10,22 @@
   transform-origin: bottom center;
 }
 
+/* span devicons displays in */
+/* JS generated angle */
 span {
+  /* -40px left positions icon in spoke container */
+  /* -20px top moves the icon along the spoke bmaking the circle bigger or smaller */
   display: block;
   position: absolute;
-  top: -24px;
-  left: -24px;
+  top: -20px; 
+  left: -40px;
 }
 
 .stack-container i {
   font-size: 5rem;
 }
 
+/* On smaller screens shown inline in a flexbox with wrap to be responsive. */
 @media only screen and (max-width: 680px) {
   .inner-container {
     position: static;
