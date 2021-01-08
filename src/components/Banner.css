@@ -20,6 +20,7 @@
   color: transparent;
   -webkit-background-clip: text;
   letter-spacing: -8px;
+  font-family: 'Open Sans', 'Monserrat', sans-serif
 }
 
 /* White descriptive text */
