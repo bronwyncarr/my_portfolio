@@ -11,7 +11,7 @@
 
 /* Transparent text with background image of clouds that move */
 .banner h1 {
-  background-image: url("../cloud\ pic.jpg");
+  background-image: url("../clouds.jpg");
   -webkit-text-fill-color: transparent;
   background-clip: text; /*oOw far background should extend within element */
   font-size: 9rem;
