@@ -4,13 +4,12 @@ function Contact({id}) {
   // Contact card includes heading, form with 2x inputs and icons container for socials. 
   return (
     <section className="contact"  id={id}>
-      <h1>Contact</h1>
+      <h1>Let's Chat</h1>
       <form action="https://formspree.io/f/xnqobwpy" method="POST">
         <div className="form-group">
           <label htmlFor="email">Email address:</label>
           <input
             type="email"
-            className="form-control"
             id="email"
             aria-describedby="emailHelp"
             placeholder="name@example.com"
@@ -21,9 +20,9 @@ function Contact({id}) {
           <label htmlFor="message">Message:</label>
           <textarea
             type="password"
-            className="form-control"
             id="message"
             rows="7"
+            name="_subject"
           ></textarea>
         </div>
         <button type="submit" className="btn">
