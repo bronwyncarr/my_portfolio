@@ -22,7 +22,7 @@ function Contact({id}) {
             type="password"
             id="message"
             rows="7"
-            name="_subject"
+            name="message"
           ></textarea>
         </div>
         <button type="submit" className="btn">
