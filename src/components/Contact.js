@@ -24,6 +24,7 @@ function Contact({id}) {
             rows="7"
             name="message"
           ></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission"></input>
         </div>
         <button type="submit" className="btn">
           Submit
